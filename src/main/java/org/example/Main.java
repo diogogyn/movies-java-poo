@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.modelo.Filme;
+import org.example.modelo.Serie;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,6 +25,13 @@ public class Main {
         System.out.println(filme.getSomaAvaliacoes());
         System.out.println(filme.getTotalAvaliacoes());
         System.out.println(filme.retornaMedia());
+
+        //--------------------------------------------------
+        Serie prisonBreak = new Serie();
+        prisonBreak.setNome("Prison break");
+        prisonBreak.setAnoLancamento(2007);
+        prisonBreak.setTemporadas(5);
+        prisonBreak.exibeFichaTecnica();
         //--------------------------------------------------
         /*
         Podemos criar vários objetos do tipo Pessoa,
