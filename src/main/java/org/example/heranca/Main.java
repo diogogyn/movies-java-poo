@@ -1,7 +1,7 @@
-package org.example;
+package org.example.heranca;
 
-import org.example.modelo.Filme;
-import org.example.modelo.Serie;
+import org.example.heranca.modelo.Filme;
+import org.example.heranca.modelo.Serie;
 
 public class Main {
     public static void main(String[] args) {

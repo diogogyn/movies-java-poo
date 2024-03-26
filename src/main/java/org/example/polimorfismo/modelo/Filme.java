@@ -1,4 +1,4 @@
-package org.example.modelo;
+package org.example.polimorfismo.modelo;
 
 /**
  * Uma classe é uma estrutura que define um tipo de objeto.
@@ -18,7 +18,7 @@ package org.example.modelo;
  * qualquer classe em qualquer pacote. Ou seja, ele possui visibilidade pública
  * e pode ser utilizado livremente.
  */
-public class Filme extends Titulo{
+public class Filme extends Titulo {
     private String diretor;
 
     public String getDiretor() {

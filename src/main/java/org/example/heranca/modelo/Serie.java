@@ -1,4 +1,4 @@
-package org.example.modelo;
+package org.example.heranca.modelo;
 
 public class Serie extends Titulo {
     private int temporadas;

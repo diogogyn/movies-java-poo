@@ -1,4 +1,4 @@
-package org.example.modelo;
+package org.example.polimorfismo.modelo;
 
 /**
  * Esta classe é criada para compartilhar atributos entre classes semalhantes.
