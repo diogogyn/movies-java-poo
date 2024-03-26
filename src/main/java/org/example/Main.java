@@ -11,9 +11,9 @@ public class Main {
         reservada new seguida do nome da classe e de parênteses vazios.
         Por exemplo, para criar um objeto do tipo Filme, podemos escrever o seguinte código:*/
         Filme filme = new Filme();
-        filme.nome = "Shrek";
-        filme.anoLancamento = 2001;
-        filme.duracaoEmMinutos = 180;
+        filme.setNome("Shrek");
+        filme.setAnoLancamento(2001);
+        filme.setDuracaoEmMinutos(180);
         System.out.println(filme);
 
         filme.exibeFichaTecnica();
@@ -21,8 +21,8 @@ public class Main {
         filme.avalia(8);
         filme.avalia(5);
 
-        System.out.println(filme.somaAvaliacoes);
-        System.out.println(filme.totalAvaliacoes);
+        System.out.println(filme.getSomaAvaliacoes());
+        System.out.println(filme.getTotalAvaliacoes());
         System.out.println(filme.retornaMedia());
         //--------------------------------------------------
         /*
