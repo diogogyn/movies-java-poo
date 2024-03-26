@@ -8,12 +8,12 @@ package org.example.modelo;
  * os atributos nome e anoLancamento, além do método exibeFichaTecnica()
  */
 public class Filme {
-    public String nome;
-    public int anoLancamento;
-    public int duracaoEmMinutos;
-    public double somaAvaliacoes;
-    public int totalAvaliacoes;
-    public boolean incluidoNoPlano;
+    private String nome;
+    private int anoLancamento;
+    private int duracaoEmMinutos;
+    private double somaAvaliacoes;
+    private int totalAvaliacoes;
+    private boolean incluidoNoPlano;
 
 
     public void exibeFichaTecnica(){
