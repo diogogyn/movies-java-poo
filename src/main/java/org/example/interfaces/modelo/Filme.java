@@ -1,6 +1,6 @@
-package org.example.polimorfismo.modelo;
-
-import org.example.polimorfismo.modelo.Titulo;
+package org.example.interfaces.modelo;
+import org.example.interfaces.calculos.Classificavel;
+import org.example.interfaces.modelo.Titulo;
 
 /**
  * Uma classe é uma estrutura que define um tipo de objeto.
@@ -9,6 +9,7 @@ import org.example.polimorfismo.modelo.Titulo;
  * Por exemplo, podemos definir uma classe chamada Filme que tenha
  * os atributos nome e anoLancamento, além do método exibeFichaTecnica()
  */
+
 
 /**
  * Em Java, os modificadores de acesso são palavras-chave que definem o nível de
@@ -20,7 +21,7 @@ import org.example.polimorfismo.modelo.Titulo;
  * qualquer classe em qualquer pacote. Ou seja, ele possui visibilidade pública
  * e pode ser utilizado livremente.
  */
-public class Filme extends Titulo {
+public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
     public String getDiretor() {
@@ -29,5 +30,10 @@ public class Filme extends Titulo {
 
     public void setDiretor(String diretor) {
         this.diretor = diretor;
+    }
+
+    @Override
+    public int getClassificacao() {
+        return (int) retornaMedia()/2;
     }
 }
